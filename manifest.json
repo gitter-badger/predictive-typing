@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Predictive Typing",
+    "version": "2015.12.6",
+    "description": "",
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "author": "Bhaskar Tiwari",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": [
+                "style.min.css"
+            ],
+            "js": [
+                "scripts/jquery.min.js",
+                "scripts/cursores.min.js",
+                "scripts/caret.min.js",
+                "scripts/tooltip.min.js",
+                "scripts/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
